@@ -1,5 +1,5 @@
-/* Hue. Amber here. */
-/*Sami reporting for duty. I need an adult */
+/* Hue. Amber here. 
+Sami reporting for duty. I need an adult */
 
 #include<stdio.h>
 
