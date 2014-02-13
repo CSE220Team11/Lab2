@@ -1,6 +1,6 @@
 /* Hello World program */
 
-#include<studio.h>
+#include<stdio.h>
 
 main()
 {
