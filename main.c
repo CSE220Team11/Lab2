@@ -11,7 +11,7 @@ int main (int argc, const char *argv[])
     while( get_source_line( FILE *file, char source_name[], char date[] ) == TRUE )
     {
     	get_source_line( FILE *file, char source_name[], char date[] );
-    	//Not suure if FILE *file is correct yet, not on a computer that I can test on currently
+    	//Not sure if FILE *file is correct yet, not on a computer that I can test on currently
     }
     return 0;
 }
@@ -35,6 +35,8 @@ BOOLEAN get_source_line(FILE *src_file, char src_name[], char todays_date[])
 	fgets( char *source_buffer[], int MAX_SOURCE_LINE_LENGTH, FILE *src_file);
     	line_number++; 
     	sprintf( char *print_buffer, char *source_buffer[], int line_number );
+    	
+    	print_line( char print_buffer, char src_name[], char todays_date[]);
     	//ends here
     	
         return (TRUE);
