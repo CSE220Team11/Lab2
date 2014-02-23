@@ -10,11 +10,13 @@ void print_line(char line[], char source_name_to_print[], char date_to_print[])
     
     if (++line_count > MAX_LINES_PER_PAGE)
     {
-        /* Missing Code Here */
+        /* Needs to start a new page and add a header to the top*/
+        print_page_header( char source_name_to_print[], char date_to_print[] );
     }
     if (strlen(line) > MAX_PRINT_LINE_LENGTH) 
     {
-        /* Missing Code Here */
+        /* Checking to see if the line is too long, if it is it needs to be 
+        trucated, then restored to it's normal length when printed*/
     }
     if (save_chp)
     {
@@ -29,6 +31,9 @@ void print_line(char line[], char source_name_to_print[], char date_to_print[])
 static void print_page_header(char source_name[], char date[])
 {
     static int page_number = 0;
-    
-    /* Missing Code Here */
+    printf( "%s", char source_name, char date[] );
+    page_number++;
+    /* I'm guessing this needs to print a header with the name and date of the
+    file. And the page number is to be incremented because this function is only
+    called when a new page needs to start.*/
 }
