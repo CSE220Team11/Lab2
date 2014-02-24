@@ -18,9 +18,23 @@ int main (int argc, const char *argv[])
 FILE *init_lister(const char *name, char source_file_name[], char dte[])
 {
     time_t timer;
+    char *time_str;
+    
+    //Current time functions
+    struct tm *current_time;
+    time( &timer );
+    current_time = localtime( &timer );
+    
+    //printable time/date information
+    time_str = asctime( current_time );
+    strcopy( current_time, dte );
+    
+    //Opening file, passing name info
     FILE *file;
     
-    /* Missing Code Here */
+    str( source_file_name, name );
+    
+    file = fopen( name, "r" );
     return file;
 }
 BOOLEAN get_source_line(FILE *src_file, char src_name[], char todays_date[])
