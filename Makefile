@@ -1,4 +1,4 @@
 File: Makefile
 
-hello: hello.c
-	gcc -o hello.c hello
+main: main.c
+	gcc -o main.c main
