@@ -17,7 +17,7 @@ void print_line(char line[], char source_name_to_print[], char date_to_print[])
             printf("\n");
         }
     }
-    if (lne_count ==0)
+    if (line_count ==0)
     {
         print_page_header(source_name_to_print, date_to_print)
     }
