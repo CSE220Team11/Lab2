@@ -30,12 +30,12 @@ FILE *init_lister(const char *name, char source_file_name[], char dte[])
     
     //printable time/date information
     time_str = asctime( current_time );
-    strcopy( current_time, dte );
+    strcpy( current_time, dte );
     
     //Opening file, passing name info
     FILE *file;
     
-    str( source_file_name, name );
+    strcpy( source_file_name, name );
     
     file = fopen( name, "r" );
     //end here
