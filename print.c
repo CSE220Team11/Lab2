@@ -47,7 +47,7 @@ void print_line(char line[], char source_name_to_print[], char date_to_print[])
 static void print_page_header(char source_name[], char date[])
 {
     static int page_number = 0;
-    printf( "%s", char source_name, char date[] );
+    printf( "%s", source_name, date);
     page_number++;
     /* I'm guessing this needs to print a header with the name and date of the
     file. And the page number is to be incremented because this function is only
