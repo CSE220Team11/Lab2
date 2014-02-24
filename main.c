@@ -48,7 +48,7 @@ BOOLEAN get_source_line(FILE *src_file, char src_name[], char todays_date[])
     static int line_number = 0;
     
     //Amber code starts here
-    fgets( source_buffer[], MAX_SOURCE_LINE_LENGTH, src_file );
+    fgets( source_buffer, MAX_SOURCE_LINE_LENGTH, src_file );
     
     //Executes print functions if it is not the end of the file
     if ( !feof( src_file ) ) 
